@@ -1,0 +1,11 @@
+<h1>BTC Miner</h1>
+<button onclick="mine()">Start Mining</button>
+<p id="btc">0 BTC</p>
+
+<script>
+let btc = 0;
+function mine() {
+  btc += (Math.random() * 0.001).toFixed(6);
+  document.getElementById('btc').innerText = btc + " BTC";
+}
+</script>
